@@ -4,7 +4,12 @@ const NavBar: React.FC = () => {
   const [pixel, setPixel] = useState(0);
   const [segmentIndex, setSegmentIndex] = useState(0);
 
-  const segmentList = ["Introduction", "Vision and Mission", "Get in Touch"];
+  const segmentList = [
+    "Introduction",
+    "Vision and Mission",
+    "Rating",
+    "Get in Touch",
+  ];
 
   useEffect(() => {
     window.addEventListener("scroll", () => {

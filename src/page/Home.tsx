@@ -1,5 +1,6 @@
 import GetInTouch from "../component/GetInTouch";
 import Introduction from "../component/Introduction";
+import Rating from "../component/Rating";
 import VisionMission from "../component/VisionMission";
 
 const Home: React.FC = () => {
@@ -7,6 +8,7 @@ const Home: React.FC = () => {
     <div>
       <Introduction />
       <VisionMission />
+      <Rating />
       <GetInTouch />
     </div>
   );

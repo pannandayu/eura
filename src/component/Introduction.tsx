@@ -1,16 +1,24 @@
-import { useEffect, useState } from "react";
+import { useState } from "react";
 import styles from "../css/Introduction.module.css";
 import { AnimatePresence, motion } from "framer-motion";
 const Introduction: React.FC = () => {
   const [companyName, setCompanyName] = useState(true);
 
   const shortName = (
-    <motion.h1 initial={{ opacity: 0 }} animate={{ opacity: 1 }}>
+    <motion.h1
+      initial={{ opacity: 0 }}
+      animate={{ opacity: 1 }}
+      whileHover={{ color: "rgb(114, 114, 114)" }}
+    >
       Eura
     </motion.h1>
   );
   const fullName = (
-    <motion.h1 initial={{ opacity: 0 }} animate={{ opacity: 1 }}>
+    <motion.h1
+      initial={{ opacity: 0 }}
+      animate={{ opacity: 1 }}
+      whileHover={{ color: "rgb(114, 114, 114)" }}
+    >
       PT. Euraniaga Mitra Abadi
     </motion.h1>
   );

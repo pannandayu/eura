@@ -3,7 +3,7 @@ import styles from "../css/GetInTouch.module.css";
 const GetInTouch: React.FC = () => {
   return (
     <div className={styles["get-in-touch"]}>
-      <div>
+      <div style={{ zIndex: 2 }}>
         <h1 style={{ textAlign: "center" }}>Reach Us Out</h1>
         <hr />
         <div className={styles.links}>
