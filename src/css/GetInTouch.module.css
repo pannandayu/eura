@@ -1,0 +1,47 @@
+.get-in-touch {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 100vh;
+  position: relative;
+}
+
+.background {
+  position: absolute;
+  left: 100%;
+  bottom: 2%;
+  width: 700px;
+  height: 700px;
+  background: rgb(189, 189, 189);
+  border-radius: 1000px;
+  transform: translateX(-50%);
+  opacity: 0.3;
+  z-index: 1;
+}
+
+.copyright {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  background: black;
+  color: white;
+  padding: 10px 0;
+  text-align: center;
+  z-index: 2;
+}
+
+.links {
+  display: flex;
+  justify-content: space-between;
+  gap: 100px;
+}
+
+.links a {
+  text-decoration: none;
+  color: black;
+}
+
+.links a:hover {
+  cursor: pointer;
+}
