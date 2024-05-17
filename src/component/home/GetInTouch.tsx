@@ -1,4 +1,4 @@
-import styles from "../css/GetInTouch.module.css";
+import styles from "../../css/GetInTouch.module.css";
 
 const GetInTouch: React.FC = () => {
   return (
@@ -35,9 +35,6 @@ const GetInTouch: React.FC = () => {
             </h1>
           </div>
         </div>
-      </div>
-      <div className={styles.copyright}>
-        <p>All Rights Reserved © 2024</p>
       </div>
       <div className={styles.background} />
     </div>

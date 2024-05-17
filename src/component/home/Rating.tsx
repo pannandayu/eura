@@ -1,4 +1,4 @@
-import styles from "../css/Rating.module.css";
+import styles from "../../css/Rating.module.css";
 const Rating: React.FC = () => {
   const border = { border: "1px solid black", borderRadius: "10px" };
 

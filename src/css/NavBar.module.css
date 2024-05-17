@@ -19,3 +19,13 @@
 .navbar div {
   margin: 0;
 }
+
+.navbar a {
+  text-decoration: none;
+}
+
+.navbar a:hover {
+  cursor: pointer;
+  color: rgb(114, 114, 114);
+  transition: 0.2s;
+}

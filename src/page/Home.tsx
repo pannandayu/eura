@@ -1,7 +1,7 @@
-import GetInTouch from "../component/GetInTouch";
-import Introduction from "../component/Introduction";
-import Rating from "../component/Rating";
-import VisionMission from "../component/VisionMission";
+import GetInTouch from "../component/home/GetInTouch";
+import Introduction from "../component/home/Introduction";
+import Rating from "../component/home/Rating";
+import VisionMission from "../component/home/VisionMission";
 
 const Home: React.FC = () => {
   return (

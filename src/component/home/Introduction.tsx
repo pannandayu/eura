@@ -1,5 +1,5 @@
 import { useState } from "react";
-import styles from "../css/Introduction.module.css";
+import styles from "../../css/Introduction.module.css";
 import { AnimatePresence, motion } from "framer-motion";
 const Introduction: React.FC = () => {
   const [companyName, setCompanyName] = useState(true);
@@ -48,6 +48,8 @@ const Introduction: React.FC = () => {
             break the bank.
           </p>
         </div>
+        <hr style={{ width: "10%" }} />
+        <p>Based in Palembang, South Sumatra</p>
         <div className={styles.background} />
       </motion.div>
     </div>

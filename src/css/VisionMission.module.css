@@ -15,6 +15,12 @@
   z-index: 1;
 }
 
+.vision-mission-text {
+  margin: 0;
+  font-size: 100px;
+  vertical-align: middle;
+}
+
 .button-container {
   position: absolute;
   right: 5%;
@@ -33,4 +39,15 @@
   justify-content: center;
   color: white;
   z-index: 0;
+}
+
+@media (max-width: 768px) {
+  .vision-mission-content p {
+    max-width: 50%;
+    margin: auto;
+  }
+
+  .vision-mission-text {
+    font-size: 80px;
+  }
 }

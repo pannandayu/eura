@@ -1,15 +1,14 @@
 import { AnimatePresence, motion } from "framer-motion";
 import { Fragment, useState } from "react";
-import styles from "../css/VisionMission.module.css";
+import styles from "../../css/VisionMission.module.css";
+import arrowImageSrc from "../../../src/asset/image/arrow.svg";
 
 const VisionMission: React.FC = () => {
   const [visMis, setVisMis] = useState(true);
 
   const vision = (
     <Fragment>
-      <h1 style={{ margin: 0, fontSize: "100px", verticalAlign: "middle" }}>
-        Vision
-      </h1>
+      <h1 className={styles["vision-mission-text"]}>Vision</h1>
       <p>
         Transforming into the <b>ultimate solution</b> for your health concerns
         with our comprehensive medical supplies.
@@ -19,9 +18,7 @@ const VisionMission: React.FC = () => {
 
   const mission = (
     <Fragment>
-      <h1 style={{ margin: 0, fontSize: "100px", verticalAlign: "middle" }}>
-        Mission
-      </h1>
+      <h1 className={styles["vision-mission-text"]}>Mission</h1>
       <p>
         Enhance the <b>development</b>, <b>distribution</b>, and{" "}
         <b> customer service </b>of medical equipment to maximize business
@@ -46,7 +43,7 @@ const VisionMission: React.FC = () => {
       <div className={styles.background} />
       <div className={styles["button-container"]}>
         <motion.img
-          src="./src/asset/image/arrow.svg"
+          src={arrowImageSrc}
           alt="arrow button"
           style={{ width: "20px", height: "20px" }}
           whileHover={{ scale: 1.1, cursor: "pointer" }}
