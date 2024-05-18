@@ -1,7 +1,7 @@
 import styles from "../css/AboutUs.module.css";
 import { motion } from "framer-motion";
 
-import eura_logo from "../../src/asset/image/eura_logo.png";
+import eura_logo from "../../src/public/asset/image/eura_logo.png";
 
 const AboutUs: React.FC = () => {
   return (

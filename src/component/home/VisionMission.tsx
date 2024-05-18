@@ -1,7 +1,7 @@
 import { AnimatePresence, motion } from "framer-motion";
 import { Fragment, useState } from "react";
 import styles from "../../css/VisionMission.module.css";
-import arrowImageSrc from "../../../src/asset/image/arrow.svg";
+import arrowImageSrc from "../../../src/public/asset/image/arrow.svg";
 
 const VisionMission: React.FC = () => {
   const [visMis, setVisMis] = useState(true);
