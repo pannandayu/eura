@@ -45,11 +45,11 @@ const Introduction: React.FC = () => {
             <b>affordability</b>, because maintaining good health shouldn't
             break the bank.
           </p>
+          <hr style={{ width: "10%" }} />
+          <p>
+            Based in <b>Palembang</b>, South Sumatra
+          </p>
         </div>
-        <hr style={{ width: "10%" }} />
-        <p>
-          Based in <b>Palembang</b>, South Sumatra
-        </p>
         <div className={styles.background} />
       </motion.div>
     </div>

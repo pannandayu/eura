@@ -47,7 +47,7 @@ const NavBar: React.FC = () => {
       setSegment("About Us");
     } else {
       const index = Math.floor(pixel / 700);
-      setSegment(homeSegment[index]);
+      setSegment(homeSegment[index] || homeSegment[0]);
     }
   }, [pixel, loc.pathname]);
 
