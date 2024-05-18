@@ -46,7 +46,7 @@ const NavBar: React.FC = () => {
     } else if (loc.pathname === BASE_URL + "/about-us") {
       setSegment("About Us");
     } else {
-      const index = Math.floor(pixel / 750);
+      const index = Math.floor(pixel / 700);
       setSegment(homeSegment[index]);
     }
   }, [pixel, loc.pathname]);

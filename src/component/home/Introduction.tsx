@@ -31,15 +31,13 @@ const Introduction: React.FC = () => {
         transition={{ duration: 0.5 }}
       >
         <div className={styles.content}>
-          <AnimatePresence mode="popLayout">
-            <motion.div
-              whileHover={{ cursor: "pointer" }}
-              onClick={() => setCompanyName((prev) => !prev)}
-              key={companyName ? "a" : "b"}
-            >
-              {companyName ? shortName : fullName}
-            </motion.div>
-          </AnimatePresence>
+          <motion.div
+            whileHover={{ cursor: "pointer" }}
+            onClick={() => setCompanyName((prev) => !prev)}
+            key={companyName ? "a" : "b"}
+          >
+            {companyName ? shortName : fullName}
+          </motion.div>
           <p>
             We are a <b>medical supply distributor</b>, catering to numerous
             hospitals and clinics, as well as individual customers like
