@@ -49,7 +49,9 @@ const Introduction: React.FC = () => {
           </p>
         </div>
         <hr style={{ width: "10%" }} />
-        <p>Based in Palembang, South Sumatra</p>
+        <p>
+          Based in <b>Palembang</b>, South Sumatra
+        </p>
         <div className={styles.background} />
       </motion.div>
     </div>

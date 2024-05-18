@@ -20,8 +20,8 @@ const VisionMission: React.FC = () => {
     <Fragment>
       <h1 className={styles["vision-mission-text"]}>Mission</h1>
       <p>
-        Enhance the <b>development</b>, <b>distribution</b>, and{" "}
-        <b> customer service </b>of medical equipment to maximize business
+        Enhance the <b>development</b> and <b>distribution</b> of medical
+        equipment along with <b>customer care</b> to maximize business
         potential.
       </p>
     </Fragment>

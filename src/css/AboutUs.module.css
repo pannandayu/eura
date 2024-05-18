@@ -1,6 +1,5 @@
 .about-us {
   display: flex;
-  justify-content: center;
   align-items: center;
   flex-direction: column;
   height: 100vh;
@@ -8,8 +7,54 @@
   background: black;
 }
 
-@media (max-width: 430px) {
+.about-us-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+@media (min-width: 375px) {
   .about-us {
+    padding-top: 25%;
+  }
+  img {
+    width: 100px;
+    height: 100px;
+  }
+}
+
+@media (min-width: 400px) {
+  .about-us {
+    height: 80vh;
+    padding-top: 20%;
+  }
+
+  img {
+    width: 150px;
+    height: 150px;
+  }
+}
+
+@media (min-width: 700px) {
+  .about-us {
+    height: 80vh;
     padding-top: 10%;
+  }
+  img {
+    width: 200px;
+    height: 200px;
+  }
+}
+
+@media (min-height: 650px) {
+  .about-us {
+    padding-bottom: 30%;
+  }
+}
+
+@media (min-height: 800px) {
+  .about-us {
+    padding-bottom: 20%;
   }
 }

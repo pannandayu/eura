@@ -13,7 +13,7 @@ const GetInTouch: React.FC = () => {
                 href="https://maps.app.goo.gl/ongkLavySciN35WDA"
                 target="_blank"
               >
-                Map
+                Offline Store
               </a>
             </h1>
             <h1>

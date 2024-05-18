@@ -6,7 +6,11 @@ const Menu: React.FC = () => {
   const menuList = ["Products", "About Us"];
 
   return (
-    <div className={styles.overlay}>
+    <motion.div
+      className={styles.overlay}
+      initial={{ opacity: 0.5 }}
+      animate={{ opacity: 1 }}
+    >
       <motion.div
         initial={{ opacity: 0, y: -30 }}
         animate={{ opacity: 1, y: 0 }}
@@ -29,7 +33,7 @@ const Menu: React.FC = () => {
         </div>
         <Link to="/">Home</Link>
       </motion.div>
-    </div>
+    </motion.div>
   );
 };
 

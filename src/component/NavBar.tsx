@@ -1,34 +1,38 @@
-import { useEffect, useState } from "react";
+import { useEffect, useMemo, useState } from "react";
 import { Link, useLocation } from "react-router-dom";
 import styles from "../css/NavBar.module.css";
+import _ from "lodash";
+
+const homeSegment = [
+  "Introduction",
+  "Vision and Mission",
+  "Rating",
+  "Get in Touch",
+];
 
 const NavBar: React.FC = () => {
   const [pixel, setPixel] = useState(0);
   const [segment, setSegment] = useState("Introduction");
 
-  const homeSegment = [
-    "Introduction",
-    "Vision and Mission",
-    "Rating",
-    "Get in Touch",
-  ];
-
   const loc = useLocation();
 
-  const fontColor = {
-    color:
-      loc.pathname === "/about-us" || loc.pathname === "/menu"
-        ? "white"
-        : "black",
-  };
+  const fontColor = useMemo(() => {
+    return {
+      color:
+        loc.pathname === "/about-us" || loc.pathname === "/menu"
+          ? "white"
+          : "black",
+    };
+  }, [loc.pathname]);
 
   useEffect(() => {
-    window.addEventListener("scroll", () => {
-      const scrollPos = window.scrollY;
-      setPixel(scrollPos);
-    });
+    const scrollHandler = _.throttle(() => {
+      setPixel(window.scrollY);
+    }, 100);
 
-    return () => window.removeEventListener("scroll", () => {});
+    window.addEventListener("scroll", scrollHandler);
+
+    return () => window.removeEventListener("scroll", scrollHandler);
   }, []);
 
   useEffect(() => {
@@ -49,6 +53,7 @@ const NavBar: React.FC = () => {
       <a
         href="https://www.google.com/search?q=euraniaga+mitra+abadi"
         target="_blank"
+        rel="noopener noreferrer"
         style={{ textDecoration: "none" }}
       >
         <p style={fontColor}>E . M . A</p>
