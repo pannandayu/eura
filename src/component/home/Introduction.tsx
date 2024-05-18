@@ -1,6 +1,6 @@
 import { useState } from "react";
 import styles from "../../css/Introduction.module.css";
-import { AnimatePresence, motion } from "framer-motion";
+import { motion } from "framer-motion";
 const Introduction: React.FC = () => {
   const [companyName, setCompanyName] = useState(true);
 
