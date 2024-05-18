@@ -6,16 +6,18 @@ import Error from "./component/Error";
 import AboutUs from "./page/AboutUs";
 import Products from "./page/Products";
 
+const { BASE_URL } = import.meta.env;
+
 function App() {
   const router = createBrowserRouter([
     {
-      path: "/",
+      path: BASE_URL,
       element: <Layout />,
       children: [
         { index: true, element: <Home /> },
-        { path: "/menu", element: <Menu /> },
-        { path: "/products", element: <Products /> },
-        { path: "/about-us", element: <AboutUs /> },
+        { path: BASE_URL + "/menu", element: <Menu /> },
+        { path: BASE_URL + "/products", element: <Products /> },
+        { path: BASE_URL + "/about-us", element: <AboutUs /> },
       ],
       errorElement: <Error />,
     },

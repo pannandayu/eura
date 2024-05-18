@@ -10,6 +10,8 @@ const homeSegment = [
   "Get in Touch",
 ];
 
+const { BASE_URL } = import.meta.env;
+
 const NavBar: React.FC = () => {
   const [pixel, setPixel] = useState(0);
   const [segment, setSegment] = useState("Introduction");
@@ -19,7 +21,8 @@ const NavBar: React.FC = () => {
   const fontColor = useMemo(() => {
     return {
       color:
-        loc.pathname === "/about-us" || loc.pathname === "/menu"
+        loc.pathname === BASE_URL + "/about-us" ||
+        loc.pathname === BASE_URL + "/menu"
           ? "white"
           : "black",
     };
@@ -36,11 +39,11 @@ const NavBar: React.FC = () => {
   }, []);
 
   useEffect(() => {
-    if (loc.pathname === "/menu") {
+    if (loc.pathname === BASE_URL + "/menu") {
       setSegment("Menu");
-    } else if (loc.pathname === "/products") {
+    } else if (loc.pathname === BASE_URL + "/products") {
       setSegment("Products");
-    } else if (loc.pathname === "/about-us") {
+    } else if (loc.pathname === BASE_URL + "/about-us") {
       setSegment("About Us");
     } else {
       const index = Math.floor(pixel / 750);
@@ -62,7 +65,7 @@ const NavBar: React.FC = () => {
         <p>Eura</p>
         <b>{segment}</b>
       </div>
-      <Link style={fontColor} to="/menu">
+      <Link style={fontColor} to={BASE_URL + "/menu"}>
         Menu
       </Link>
     </div>

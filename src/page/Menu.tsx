@@ -2,6 +2,8 @@ import { Link } from "react-router-dom";
 import styles from "../css/Menu.module.css";
 import { motion } from "framer-motion";
 
+const { BASE_URL } = import.meta.env;
+
 const Menu: React.FC = () => {
   const menuList = ["Products", "About Us"];
 
@@ -26,12 +28,14 @@ const Menu: React.FC = () => {
                 whileHover={{ scale: 1.1 }}
                 whileTap={{ scale: 0.9 }}
               >
-                <Link to={"/" + el.toLowerCase().replace(" ", "-")}>{el}</Link>
+                <Link to={BASE_URL + "/" + el.toLowerCase().replace(" ", "-")}>
+                  {el}
+                </Link>
               </motion.h1>
             );
           })}
         </div>
-        <Link to="/">Home</Link>
+        <Link to={BASE_URL}>Home</Link>
       </motion.div>
     </motion.div>
   );
