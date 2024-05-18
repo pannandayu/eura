@@ -35,7 +35,7 @@ const Menu: React.FC = () => {
             );
           })}
         </div>
-        <Link to={BASE_URL}>Home</Link>
+        <Link to={BASE_URL + "/"}>Home</Link>
       </motion.div>
     </motion.div>
   );
