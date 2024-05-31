@@ -1,17 +1,7 @@
-import GetInTouch from "../component/home/GetInTouch";
-import Introduction from "../component/home/Introduction";
-import Rating from "../component/home/Rating";
-import VisionMission from "../component/home/VisionMission";
+import Landing from "../component/home/Landing";
 
 const Home: React.FC = () => {
-  return (
-    <div>
-      <Introduction />
-      <VisionMission />
-      <Rating />
-      <GetInTouch />
-    </div>
-  );
+  return <Landing />;
 };
 
 export default Home;

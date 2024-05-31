@@ -1,0 +1,20 @@
+.authenticity-headline {
+  margin-right: 10%;
+  text-align: right;
+}
+
+.authenticity-content {
+  text-align: right;
+}
+
+.image {
+  margin-left: 5%;
+  margin-right: 5%;
+  width: 530px;
+  height: 350px;
+}
+.image2 {
+  margin-top: 3%;
+  width: 600px;
+  height: 350px;
+}

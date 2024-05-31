@@ -1,0 +1,9 @@
+.address {
+  text-align: left;
+  margin-top: 40%;
+}
+
+.address p,
+.address h2 {
+  margin: 0;
+}

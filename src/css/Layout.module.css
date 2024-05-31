@@ -4,14 +4,15 @@
   text-align: center;
 }
 
-.copyright {
+.footer {
   bottom: 0;
   width: 100%;
-  background: black;
+  background: rgb(144, 144, 144);
   color: white;
   padding: 10px 0;
   text-align: center;
   z-index: 2;
+  font-size: 14px;
 }
 
 @media (max-width: 768px) {

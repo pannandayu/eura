@@ -1,58 +1,37 @@
-import { useState } from "react";
-import styles from "../../css/Introduction.module.css";
 import { motion } from "framer-motion";
-const Introduction: React.FC = () => {
-  const [companyName, setCompanyName] = useState(true);
+import { ReactNode } from "react";
+import styles from "../../css/Introduction.module.css";
 
-  const shortName = (
-    <motion.h1
-      initial={{ opacity: 0 }}
-      animate={{ opacity: 1 }}
-      whileHover={{ color: "rgb(114, 114, 114)" }}
-    >
-      Eura
-    </motion.h1>
-  );
-  const fullName = (
-    <motion.h1
-      initial={{ opacity: 0 }}
-      animate={{ opacity: 1 }}
-      whileHover={{ color: "rgb(114, 114, 114)" }}
-    >
-      PT. Euraniaga Mitra Abadi
-    </motion.h1>
-  );
-
+const Introduction: React.FC<{ children?: ReactNode }> = ({ children }) => {
   return (
-    <div className={styles.introduction}>
+    <motion.div className={styles.introduction}>
       <motion.div
-        initial={{ y: -30, opacity: 0 }}
-        animate={{ y: 0, opacity: 1 }}
+        initial={{ x: -30, opacity: 0 }}
+        animate={{ x: 0, opacity: 1 }}
         transition={{ duration: 0.5 }}
       >
-        <div className={styles.content}>
-          <motion.div
-            whileHover={{ cursor: "pointer" }}
-            onClick={() => setCompanyName((prev) => !prev)}
-            key={companyName ? "a" : "b"}
-          >
-            {companyName ? shortName : fullName}
-          </motion.div>
-          <p>
-            We are a <b>medical supply distributor</b>, catering to numerous
-            hospitals and clinics, as well as individual customers like
-            yourself. Committed to offering effective solutions, we ensure{" "}
-            <b>affordability</b>, because maintaining good health shouldn't
-            break the bank.
-          </p>
-          <hr style={{ width: "10%" }} />
-          <p>
-            Based in <b>Palembang</b>, South Sumatra
-          </p>
-        </div>
-        <div className={styles.background} />
+        <h1>PT. Euraniaga</h1>
+        <h1>Mitra Abadi</h1>
       </motion.div>
-    </div>
+      <motion.div
+        className={styles["info-box"]}
+        initial={{ x: -30, opacity: 0 }}
+        animate={{ x: 0, opacity: 1 }}
+        transition={{ duration: 0.65 }}
+      >
+        <p>
+          We are a <b>medical supply distributor</b> based in Palembang, South
+          Sumatra.
+        </p>
+        <p>
+          We serve numerous hospitals, clinics, and individual customers like
+          yourself. Committed to offering effective solutions, we ensure
+          affordability because maintaining good health shouldn't break the
+          bank.
+        </p>
+        {children}
+      </motion.div>
+    </motion.div>
   );
 };
 

@@ -1,7 +1,7 @@
 import { Outlet } from "react-router-dom";
+import { Fragment } from "react/jsx-runtime";
 import styles from "../css/Layout.module.css";
 import NavBar from "./NavBar";
-import { Fragment } from "react/jsx-runtime";
 
 const Layout = () => {
   return (
@@ -10,7 +10,7 @@ const Layout = () => {
         <NavBar />
         <Outlet />
       </main>
-      <footer className={styles.copyright}>
+      <footer className={styles.footer}>
         <p>All Rights Reserved © 2024</p>
       </footer>
     </Fragment>

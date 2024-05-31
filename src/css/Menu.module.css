@@ -1,23 +1,25 @@
-.overlay {
-  background: rgb(87, 87, 87);
-}
-
 .menu {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-  height: 100vh;
-  color: white;
+  background-color: #eeeba7;
+  text-align: right;
+  width: 30%;
+  height: 50%;
+  position: absolute;
+  left: 65%;
+  top: 15%;
+  border-radius: 20px;
+  z-index: 2;
 }
 
-.menu a {
+.menu-content {
+  padding-top: 5%;
+  padding-right: 5%;
+}
+
+.menu-content a {
+  color: black;
   text-decoration: none;
-  color: rgb(255, 255, 255);
 }
 
-.menu a:hover {
-  cursor: pointer;
-  color: rgb(168, 168, 168);
-  transition: 0.2s;
+.menu-content a:hover {
+  color: rgb(96, 95, 95);
 }

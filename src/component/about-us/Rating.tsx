@@ -1,6 +1,13 @@
+import { useSetAtom } from "jotai";
+import { Link } from "react-router-dom";
+import { menuAtom } from "../../context/atom";
 import styles from "../../css/Rating.module.css";
+
+const { BASE_URL } = import.meta.env;
+
 const Rating: React.FC = () => {
-  const border = { border: "1px solid black", borderRadius: "10px" };
+  const border = { border: "1px solid #eeeba7", borderRadius: "10px" };
+  const setMenuState = useSetAtom(menuAtom);
 
   return (
     <div className={styles.rating}>
@@ -28,6 +35,14 @@ const Rating: React.FC = () => {
           </div>
         </div>
       </div>
+      <br />
+      <Link
+        style={{ color: "#eeeba7", textDecoration: "none" }}
+        to={BASE_URL}
+        onClick={() => setMenuState(false)}
+      >
+        Home
+      </Link>
     </div>
   );
 };

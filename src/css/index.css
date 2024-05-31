@@ -1,8 +1,9 @@
-@import url("https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Sen:wght@400..800&family=Space+Grotesk:wght@300&display=swap");
 
 body {
-  font-family: "Space Grotesk", Arial, Helvetica, sans-serif;
+  font-family: "Space Grotesk", "Times New Roman", Helvetica, sans-serif;
   margin: 0;
   padding: 0;
+  background: #426d55;
+  color: #eeeba7;
 }

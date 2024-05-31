@@ -1,0 +1,31 @@
+.shop {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  overflow: hidden;
+}
+
+.links {
+  display: flex;
+  justify-content: space-evenly;
+  gap: 20px;
+}
+
+.links a {
+  text-decoration: none;
+  color: #eeeba7;
+}
+
+.links a:hover {
+  cursor: pointer;
+  color: #e6de56;
+  transition: 0.2s;
+}
+
+@media (max-width: 768px) {
+  .links {
+    gap: 50px;
+  }
+}

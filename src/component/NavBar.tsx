@@ -1,73 +1,26 @@
-import { useEffect, useMemo, useState } from "react";
-import { Link, useLocation } from "react-router-dom";
+import { motion } from "framer-motion";
+import { useAtom } from "jotai";
+import { menuAtom } from "../context/atom";
 import styles from "../css/NavBar.module.css";
-import _ from "lodash";
-
-const homeSegment = [
-  "Introduction",
-  "Vision and Mission",
-  "Rating",
-  "Get in Touch",
-];
-
-const { BASE_URL } = import.meta.env;
+import Menu from "./home/Menu";
 
 const NavBar: React.FC = () => {
-  const [pixel, setPixel] = useState(0);
-  const [segment, setSegment] = useState("Introduction");
-
-  const loc = useLocation();
-
-  const fontColor = useMemo(() => {
-    return {
-      color:
-        loc.pathname === BASE_URL + "/about-us" ||
-        loc.pathname === BASE_URL + "/menu"
-          ? "white"
-          : "black",
-    };
-  }, [loc.pathname]);
-
-  useEffect(() => {
-    const scrollHandler = _.throttle(() => {
-      setPixel(window.scrollY);
-    }, 100);
-
-    window.addEventListener("scroll", scrollHandler);
-
-    return () => window.removeEventListener("scroll", scrollHandler);
-  }, []);
-
-  useEffect(() => {
-    if (loc.pathname === BASE_URL + "/menu") {
-      setSegment("Menu");
-    } else if (loc.pathname === BASE_URL + "/products") {
-      setSegment("Products");
-    } else if (loc.pathname === BASE_URL + "/about-us") {
-      setSegment("About Us");
-    } else {
-      const index = Math.floor(pixel / 700);
-      setSegment(homeSegment[index] || homeSegment[0]);
-    }
-  }, [pixel, loc.pathname]);
+  const [menu, setMenu] = useAtom(menuAtom);
 
   return (
-    <div className={styles.navbar} style={fontColor}>
-      <a
-        href="https://www.google.com/search?q=euraniaga+mitra+abadi"
-        target="_blank"
-        rel="noopener noreferrer"
-        style={{ textDecoration: "none" }}
+    <div>
+      <motion.div
+        initial={{ y: -30, opacity: 0 }}
+        animate={{ y: 0, opacity: 1 }}
+        transition={{ duration: 0.5 }}
+        whileHover={{ scale: 1.1, cursor: "pointer" }}
+        whileTap={{ scale: 0.9 }}
+        onTap={() => setMenu((prev) => !prev)}
+        className={styles.menu}
       >
-        <p style={fontColor}>E . M . A</p>
-      </a>
-      <div>
-        <p>Eura</p>
-        <b>{segment}</b>
-      </div>
-      <Link style={fontColor} to={BASE_URL + "/menu"}>
-        Menu
-      </Link>
+        <p>{menu ? "x" : "☰"}</p>
+      </motion.div>
+      <Menu />
     </div>
   );
 };

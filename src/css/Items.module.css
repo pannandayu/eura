@@ -1,0 +1,33 @@
+.items {
+  color: #eeeba7;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  height: 150vh;
+}
+
+.items-content {
+  width: 80%;
+  margin-top: 7%;
+}
+
+.items-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 2%;
+  margin-top: 2%;
+}
+
+.items-grid a {
+  text-decoration: none;
+  color: #eeeba7;
+}
+
+.item-card {
+  background: #3a5945;
+  border-radius: 8px;
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+}
