@@ -26,8 +26,9 @@ const History: React.FC = () => {
             medical supply distributor.
           </h3>
           <h3>
-            We have successfully fulfilled requests from a wide range of
-            clients, including large corporations and small businesses.
+            We have successfully fulfilled requests from a{" "}
+            <b>wide range of clients</b>, including large corporations and small
+            businesses.
           </h3>
         </motion.div>
       </motion.section>

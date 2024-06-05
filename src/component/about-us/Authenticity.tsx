@@ -24,8 +24,8 @@ const Authenticity: React.FC = () => {
         >
           <h3>
             Our reputation for excellence is built on a foundation of
-            authenticity. We offer genuine products with a modest markup to
-            ensure the sustainability of our operations.
+            authenticity. We offer <b>genuine products</b> with a modest markup
+            to ensure the sustainability of our operations.
           </h3>
         </motion.div>
       </motion.section>

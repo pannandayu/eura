@@ -12,7 +12,8 @@ const introText = (
     <p>
       We serve numerous hospitals, clinics, and individual customers like
       yourself. Committed to offering effective solutions, we ensure
-      affordability because maintaining good health shouldn't break the bank.
+      affordability because{" "}
+      <b>maintaining good health shouldn't break the bank</b>.
     </p>
   </Fragment>
 );
