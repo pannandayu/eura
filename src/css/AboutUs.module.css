@@ -23,10 +23,6 @@
   .weird-line {
     margin-top: 15%;
   }
-
-  .about-us-layout {
-    height: 500vh;
-  }
 }
 
 @media (max-width: 414px) {
@@ -37,10 +33,6 @@
 
   .weird-line {
     margin-top: 15%;
-  }
-
-  .about-us-layout {
-    height: 500vh;
   }
 }
 
@@ -53,10 +45,6 @@
   .weird-line {
     margin-top: 15%;
   }
-
-  .about-us-layout {
-    height: 500vh;
-  }
 }
 
 @media (max-width: 375px) {
@@ -68,10 +56,6 @@
   .weird-line {
     margin-top: 15%;
   }
-
-  .about-us-layout {
-    height: 500vh;
-  }
 }
 
 @media (max-width: 360px) {
@@ -82,9 +66,5 @@
 
   .weird-line {
     margin-top: 15%;
-  }
-
-  .about-us-layout {
-    height: 500vh;
   }
 }
