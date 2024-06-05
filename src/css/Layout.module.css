@@ -9,14 +9,7 @@
   width: 100%;
   background: rgb(144, 144, 144);
   color: white;
-  padding: 10px 0;
+  padding: 5px 0;
   text-align: center;
-  z-index: 2;
   font-size: 14px;
-}
-
-@media (max-width: 768px) {
-  .container {
-    font-size: 14px;
-  }
 }

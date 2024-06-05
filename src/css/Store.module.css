@@ -26,8 +26,13 @@
   transition: 0.2s;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 414px) {
   .links {
-    gap: 50px;
+    gap: 15px;
+  }
+
+  .running-text h1 {
+    white-space: nowrap;
+    font-size: 20px;
   }
 }

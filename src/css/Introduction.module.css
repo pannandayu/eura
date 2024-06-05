@@ -17,3 +17,19 @@
   color: #f1dc9c;
   transition: 0.2s ease-in-out;
 }
+
+@media (max-width: 430px) {
+  .introduction h1 {
+    text-align: center;
+    font-size: 300%;
+  }
+
+  .info-box {
+    max-width: fit-content;
+    text-align: justify;
+  }
+
+  .info-box a {
+    font-size: 12px;
+  }
+}

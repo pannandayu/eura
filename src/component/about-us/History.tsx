@@ -2,19 +2,18 @@ import { motion } from "framer-motion";
 import styles from "../../css/History.module.css";
 
 import eura_banner from "../../../src/public/asset/image/eura_banner2.jpg";
-import Wrapper from "./Wrapper";
 
 const History: React.FC = () => {
   return (
-    <Wrapper>
+    <div className={styles.history}>
       <motion.section
         className={styles["history-headline"]}
         initial={{ x: -40 }}
         animate={{ x: 0 }}
         transition={{ duration: 0.5 }}
       >
-        <span style={{ fontSize: "30px" }}>Our</span>
-        <span style={{ fontSize: "150px" }}>History</span>
+        <span className={styles["history-headline-our"]}>Our</span>
+        <span className={styles["history-headline-category"]}>History</span>
         <motion.div
           className={styles["history-content"]}
           initial={{ x: -20 }}
@@ -40,7 +39,7 @@ const History: React.FC = () => {
         src={eura_banner}
         alt="eura banner"
       />
-    </Wrapper>
+    </div>
   );
 };
 

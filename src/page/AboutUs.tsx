@@ -1,7 +1,7 @@
-import AboutUsWrapper from "../component/about-us/AboutUsLayout";
+import AboutUsLayout from "../component/about-us/AboutUsLayout";
 
 const AboutUs: React.FC = () => {
-  return <AboutUsWrapper />;
+  return <AboutUsLayout />;
 };
 
 export default AboutUs;

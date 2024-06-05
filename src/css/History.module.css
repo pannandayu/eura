@@ -1,6 +1,19 @@
+.history {
+  display: flex;
+  text-align: left;
+}
+
 .history-headline {
   margin-top: 13%;
   margin-left: 5%;
+}
+
+.history-headline-our {
+  font-size: 30px;
+}
+
+.history-headline-category {
+  font-size: 150px;
 }
 
 .history-content {
@@ -9,8 +22,137 @@
 
 .image {
   margin-top: 18%;
-  margin-right: 5%;
-  height: 5%;
+  margin-right: 10%;
   height: 200px;
-  width: 700px;
+  width: 550px;
+}
+
+@media (max-width: 430px) {
+  .history-headline {
+    margin-top: 30%;
+  }
+
+  .history-headline-our {
+    font-size: 20px;
+  }
+
+  .history-headline-category {
+    font-size: 80px;
+  }
+
+  .history-content {
+    max-width: 90%;
+  }
+
+  .image {
+    height: 100px;
+    width: 300px;
+    position: absolute;
+    top: 43%;
+    left: 5%;
+  }
+}
+
+@media (max-width: 414px) {
+  .history-headline {
+    margin-top: 30%;
+  }
+
+  .history-headline-our {
+    font-size: 20px;
+  }
+
+  .history-headline-category {
+    font-size: 80px;
+  }
+
+  .history-content {
+    max-width: 90%;
+  }
+
+  .image {
+    height: 100px;
+    width: 300px;
+    position: absolute;
+    top: 45%;
+    left: 5%;
+  }
+}
+
+@media (max-width: 390px) {
+  .history-headline {
+    margin-top: 30%;
+  }
+
+  .history-headline-our {
+    font-size: 20px;
+  }
+
+  .history-headline-category {
+    font-size: 80px;
+  }
+
+  .history-content {
+    max-width: 90%;
+  }
+
+  .image {
+    height: 100px;
+    width: 300px;
+    position: absolute;
+    top: 52%;
+    left: 5%;
+  }
+}
+
+@media (max-width: 375px) {
+  .history-headline {
+    margin-top: 30%;
+  }
+
+  .history-headline-our {
+    font-size: 20px;
+  }
+
+  .history-headline-category {
+    font-size: 80px;
+  }
+
+  .history-content {
+    max-width: 90%;
+  }
+
+  .image {
+    height: 100px;
+    width: 300px;
+    position: absolute;
+    top: 65%;
+    left: 5%;
+  }
+}
+
+@media (max-width: 360px) {
+  .history-headline {
+    margin-top: 30%;
+  }
+
+  .history-headline-our {
+    font-size: 20px;
+  }
+
+  .history-headline-category {
+    font-size: 80px;
+  }
+
+  .history-content {
+    max-width: 90%;
+  }
+
+  .image {
+    height: 100px;
+    width: 300px;
+    position: absolute;
+    top: 60%;
+    left: 5%;
+  }
 }

@@ -2,12 +2,12 @@
   background-color: #eeeba7;
   text-align: right;
   width: 30%;
-  height: 50%;
+  height: 58%;
   position: absolute;
   left: 65%;
   top: 15%;
   border-radius: 20px;
-  z-index: 2;
+  z-index: 10;
 }
 
 .menu-content {
@@ -22,4 +22,24 @@
 
 .menu-content a:hover {
   color: rgb(96, 95, 95);
+}
+
+@media (max-width: 430px) {
+  .menu {
+    position: absolute;
+    left: 10%;
+    top: 10%;
+    width: 85%;
+    height: 53%;
+  }
+}
+
+@media (max-width: 375px) {
+  .menu {
+    position: absolute;
+    left: 10%;
+    top: 10%;
+    width: 85%;
+    height: 70%;
+  }
 }

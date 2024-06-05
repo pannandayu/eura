@@ -3,30 +3,31 @@ import styles from "../../css/Authenticity.module.css";
 
 import eura_inside from "../../../src/public/asset/image/eura_inside.jpeg";
 import eura_inside_2 from "../../../src/public/asset/image/eura_inside2.jpeg";
-import Wrapper from "./Wrapper";
 
 const Authenticity: React.FC = () => {
   return (
-    <Wrapper>
+    <div className={styles.authenticity}>
       <motion.img
         className={styles.image}
-        initial={{ x: -150 }}
-        animate={{ x: 0 }}
-        transition={{ duration: 0.75 }}
+        initial={{ y: 150 }}
+        animate={{ y: 0 }}
+        transition={{ duration: 0.65 }}
         src={eura_inside}
         alt="eura inside"
       />
       <motion.section
         className={styles["authenticity-headline"]}
-        initial={{ x: 70 }}
+        initial={{ x: -70 }}
         animate={{ x: 0 }}
         transition={{ duration: 1 }}
       >
-        <span style={{ fontSize: "30px" }}>Our</span>
-        <span style={{ fontSize: "100px" }}>Authenticity</span>
+        <span className={styles["authenticity-headline-our"]}>Our</span>
+        <span className={styles["authenticity-headline-category"]}>
+          Authenticity
+        </span>
         <motion.div
           className={styles["authenticity-content"]}
-          initial={{ x: 60 }}
+          initial={{ x: -60 }}
           animate={{ x: 0 }}
           transition={{ duration: 0.75 }}
         >
@@ -36,16 +37,16 @@ const Authenticity: React.FC = () => {
             ensure the sustainability of our operations.
           </h3>
         </motion.div>
-        <motion.img
-          className={styles.image2}
-          initial={{ x: 150 }}
-          animate={{ x: 0 }}
-          transition={{ duration: 0.65 }}
-          src={eura_inside_2}
-          alt="eura inside 2"
-        />
       </motion.section>
-    </Wrapper>
+      <motion.img
+        className={styles.image2}
+        initial={{ y: 150 }}
+        animate={{ y: 0 }}
+        transition={{ duration: 1 }}
+        src={eura_inside_2}
+        alt="eura inside 2"
+      />
+    </div>
   );
 };
 

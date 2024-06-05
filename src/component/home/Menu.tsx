@@ -12,6 +12,7 @@ const Menu: React.FC = () => {
     { title: "Products", path: "products" },
     { title: "About Us", path: "about-us" },
     { title: "Shop", path: "shop" },
+    { title: "Home", path: "" },
   ];
   const contactList = [
     { title: "WhatsApp 1", path: "https://wa.me/6281279909679" },

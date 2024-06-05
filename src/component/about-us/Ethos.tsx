@@ -1,20 +1,19 @@
 import { motion } from "framer-motion";
 import styles from "../../css/Ethos.module.css";
-import Wrapper from "./Wrapper";
 
 import eura_front from "../../../src/public/asset/image/eura_front.jpeg";
 
 const Ethos: React.FC = () => {
   return (
-    <Wrapper>
+    <div className={styles.ethos}>
       <motion.section
         className={styles["ethos-headline"]}
         initial={{ x: -70 }}
         animate={{ x: 0 }}
         transition={{ duration: 1 }}
       >
-        <span style={{ fontSize: "30px" }}>Our</span>
-        <span style={{ fontSize: "150px" }}>Ethos</span>
+        <span className={styles["ethos-headline-our"]}>Our</span>
+        <span className={styles["ethos-headline-category"]}>Ethos</span>
         <motion.div
           className={styles["ethos-content"]}
           initial={{ x: -60 }}
@@ -36,7 +35,7 @@ const Ethos: React.FC = () => {
         src={eura_front}
         alt="eura front"
       />
-    </Wrapper>
+    </div>
   );
 };
 

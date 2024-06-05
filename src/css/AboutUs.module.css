@@ -1,44 +1,75 @@
-@media (min-width: 375px) {
-  .about-us {
-    padding-top: 25%;
+.about-us-layout {
+  height: 450vh;
+  background: #426d55;
+}
+
+.about-us-headtag {
+  margin: 0;
+  position: absolute;
+  margin-top: 4%;
+  margin-left: 4.5%;
+}
+
+.weird-line {
+  width: 50%;
+}
+
+@media (max-width: 430px) {
+  .about-us-headtag {
+    margin-top: 7%;
+    margin-left: 7%;
   }
-  img {
-    width: 100px;
-    height: 100px;
+
+  .weird-line {
+    margin-top: 115%;
+  }
+
+  .about-us-layout {
+    height: 440vh;
   }
 }
 
-@media (min-width: 400px) {
-  .about-us {
-    height: 80vh;
-    padding-top: 20%;
+@media (max-width: 414px) {
+  .about-us-headtag {
+    margin-top: 7%;
+    margin-left: 7%;
   }
 
-  img {
-    width: 150px;
-    height: 150px;
+  .weird-line {
+    margin-top: 115%;
+  }
+
+  .about-us-layout {
+    height: 450vh;
   }
 }
 
-@media (min-width: 700px) {
-  .about-us {
-    height: 80vh;
-    padding-top: 10%;
+@media (max-width: 375px) {
+  .about-us-headtag {
+    margin-top: 7%;
+    margin-left: 7%;
   }
-  img {
-    width: 200px;
-    height: 200px;
+
+  .weird-line {
+    margin-top: 115%;
+  }
+
+  .about-us-layout {
+    height: 520vh;
   }
 }
 
-@media (min-height: 650px) {
-  .about-us {
-    padding-bottom: 30%;
+@media (max-width: 360px) {
+  .about-us-headtag {
+    margin-top: 7%;
+    margin-left: 7%;
   }
-}
 
-@media (min-height: 800px) {
-  .about-us {
-    padding-bottom: 20%;
+  .weird-line {
+    margin-top: 115%;
+  }
+
+  .about-us-layout {
+    height: 500vh;
   }
 }

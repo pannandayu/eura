@@ -14,3 +14,10 @@
   color: #f1dc9c;
   transition: 0.2s ease-in-out;
 }
+
+@media (max-width: 375px) and (max-height: 667px) {
+  .brands {
+    margin-top: 10%;
+    margin-bottom: 10%;
+  }
+}

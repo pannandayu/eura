@@ -10,7 +10,8 @@ const { BASE_URL } = import.meta.env;
 const RunningText: React.FC<{ children?: ReactNode }> = ({ children }) => {
   return (
     <motion.div
-      initial={{ x: "130%" }}
+      className={styles["running-text"]}
+      initial={{ x: "115%" }}
       animate={{ x: "-200%" }}
       transition={{
         duration: 15,

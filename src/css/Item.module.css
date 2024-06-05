@@ -36,3 +36,15 @@
   color: #f1dc9c;
   transition: 0.2s ease-in-out;
 }
+
+@media (max-width: 430px) {
+  .item h1 {
+    font-size: 26px;
+  }
+}
+
+@media (max-width: 375px) {
+  .item h1 {
+    font-size: 22px;
+  }
+}

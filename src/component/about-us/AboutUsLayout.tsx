@@ -1,24 +1,14 @@
-import { motion, MotionStyle } from "framer-motion";
+import { motion } from "framer-motion";
 import { useSetAtom } from "jotai";
 import _ from "lodash";
 import { Fragment, useEffect, useState } from "react";
-import { Link } from "react-router-dom";
 import { menuAtom } from "../../context/atom";
 import Authenticity from "./Authenticity";
 import Ethos from "./Ethos";
 import History from "./History";
 import Rating from "./Rating";
 import VisionMission from "./VisionMission";
-
-const { BASE_URL } = import.meta.env;
-
-const layoutStyle = { height: "500vh", background: "#426d55" };
-const euraHomeButtonStyle = {
-  margin: 0,
-  position: "absolute",
-  marginTop: "4%",
-  marginLeft: "4.5%",
-} as MotionStyle;
+import styles from "../../css/AboutUs.module.css";
 
 const AboutUsLayout: React.FC = () => {
   const [pixel, setPixel] = useState(0);
@@ -34,13 +24,13 @@ const AboutUsLayout: React.FC = () => {
     const scrollHandler = _.throttle(() => {
       setPixel(window.scrollY);
       setMenuState(false);
-    }, 100);
+    });
     window.addEventListener("scroll", scrollHandler);
     return () => window.removeEventListener("scroll", scrollHandler);
   }, []);
 
   useEffect(() => {
-    if (pixel > 150) {
+    if (pixel > 10) {
       setRenderedComp((prev) => {
         return {
           ...prev,
@@ -48,7 +38,7 @@ const AboutUsLayout: React.FC = () => {
         };
       });
     }
-    if (pixel > 1000) {
+    if (pixel > 570) {
       setRenderedComp((prev) => {
         return {
           ...prev,
@@ -56,7 +46,7 @@ const AboutUsLayout: React.FC = () => {
         };
       });
     }
-    if (pixel > 1700) {
+    if (pixel > 1500) {
       setRenderedComp((prev) => {
         return {
           ...prev,
@@ -64,7 +54,7 @@ const AboutUsLayout: React.FC = () => {
         };
       });
     }
-    if (pixel > 2800) {
+    if (pixel > 2000) {
       setRenderedComp((prev) => {
         return {
           ...prev,
@@ -75,19 +65,13 @@ const AboutUsLayout: React.FC = () => {
   }, [pixel]);
 
   return (
-    <div style={layoutStyle}>
+    <div className={styles["about-us-layout"]}>
       <motion.p
+        className={styles["about-us-headtag"]}
         initial={{ x: -20 }}
         animate={{ x: 0 }}
-        style={euraHomeButtonStyle}
       >
-        <Link
-          style={{ color: "#eeeba7", textDecoration: "none" }}
-          to={BASE_URL}
-          onClick={() => setMenuState(false)}
-        >
-          Eura
-        </Link>
+        About Us
       </motion.p>
       <article>
         <History />
@@ -95,7 +79,7 @@ const AboutUsLayout: React.FC = () => {
         {renderedComp.ethos && (
           <Fragment>
             <Ethos />
-            <hr style={{ width: "50%" }} />
+            <hr className={styles["weird-line"]} />
           </Fragment>
         )}
         {renderedComp.visionMission && (

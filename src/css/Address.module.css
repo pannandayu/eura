@@ -7,3 +7,12 @@
 .address h2 {
   margin: 0;
 }
+
+@media (max-width: 375px) {
+  .address {
+    margin-top: 35%;
+  }
+  .address p {
+    font-size: 12px;
+  }
+}

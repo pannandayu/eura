@@ -28,34 +28,32 @@ const VisionMission: React.FC = () => {
   );
 
   return (
-    <div className={styles["vision-mission"]}>
-      <AnimatePresence mode="popLayout">
-        <motion.section
-          key={visMis ? "vision" : "mission"}
-          className={styles["vision-mission-content"]}
-          initial={{ x: -40, opacity: 0 }}
-          animate={{ x: 0, opacity: 1 }}
-          exit={{ x: 40, opacity: 0 }}
-          transition={{ duration: 0.25 }}
+    <Fragment>
+      <div className={styles["vision-mission"]}>
+        <AnimatePresence mode="popLayout">
+          <motion.section
+            key={visMis ? "vision" : "mission"}
+            className={styles["vision-mission-content"]}
+            initial={{ x: -40, opacity: 0 }}
+            animate={{ x: 0, opacity: 1 }}
+            exit={{ x: 40, opacity: 0 }}
+            transition={{ duration: 0.25 }}
+          >
+            {visMis ? vision : mission}
+          </motion.section>
+        </AnimatePresence>
+        <motion.div
+          className={styles["button-container"]}
+          whileHover={{ scale: 1.1, cursor: "pointer" }}
+          whileTap={{ scale: 0.9 }}
+          onClick={() => {
+            setVisMis((prev) => !prev);
+          }}
         >
-          {visMis ? vision : mission}
-        </motion.section>
-      </AnimatePresence>
-      <motion.div
-        className={styles["button-container"]}
-        whileHover={{ scale: 1.1, cursor: "pointer" }}
-        whileTap={{ scale: 0.9 }}
-        onClick={() => {
-          setVisMis((prev) => !prev);
-        }}
-      >
-        <img
-          src={arrowImageSrc}
-          alt="arrow button"
-          style={{ width: "20px", height: "20px" }}
-        />
-      </motion.div>
-    </div>
+          <img src={arrowImageSrc} alt="arrow button" />
+        </motion.div>
+      </div>
+    </Fragment>
   );
 };
 
