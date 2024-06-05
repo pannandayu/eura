@@ -4,40 +4,48 @@ import { Link } from "react-router-dom";
 
 const { BASE_URL } = import.meta.env;
 
-const Brands: React.FC = () => {
-  const brandsList = [
-    "Onehealth",
-    "General Care",
-    "Resources",
-    "Onemed",
-    "Terumo",
-    "Omron",
-    "Easy Touch",
-    "Autocheck",
-    "Bistos",
-    "Gea",
-    "Renz",
-    "Philips",
-    "And many more!",
-    "Back to home",
-  ];
+const brandsList = [
+  "Onehealth",
+  "General Care",
+  "Resources",
+  "Onemed",
+  "Terumo",
+  "Omron",
+  "Easy Touch",
+  "Autocheck",
+  "Bistos",
+  "Gea",
+  "Renz",
+  "Philips",
+  "And many more!",
+  "Back to home",
+];
 
+const Brands: React.FC = () => {
   return (
     <div className={styles.brands}>
-      <div className={styles["brands-content"]}>
+      <section className={styles["brands-content"]}>
         <motion.h1 initial={{ opacity: 0 }} animate={{ opacity: 1 }}>
           Our Brands
         </motion.h1>
         {brandsList.map((el, index) => {
           if (el === "Back to home") {
             return (
-              <Link
-                style={{ textDecoration: "none", color: "#eeeba7" }}
-                to={BASE_URL}
+              <motion.span
                 key={el}
+                className={styles.link}
+                initial={{ opacity: 0, y: 20 }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={{
+                  duration: 0.25,
+                  ease: "easeInOut",
+                  delay: index * 0.2,
+                }}
               >
-                Home
-              </Link>
+                <Link to={BASE_URL + "products"} key={el}>
+                  Back
+                </Link>
+              </motion.span>
             );
           }
           return (
@@ -55,7 +63,7 @@ const Brands: React.FC = () => {
             </motion.h3>
           );
         })}
-      </div>
+      </section>
     </div>
   );
 };

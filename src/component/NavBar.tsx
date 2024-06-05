@@ -8,7 +8,7 @@ const NavBar: React.FC = () => {
   const [menu, setMenu] = useAtom(menuAtom);
 
   return (
-    <div>
+    <nav>
       <motion.div
         initial={{ y: -30, opacity: 0 }}
         animate={{ y: 0, opacity: 1 }}
@@ -21,7 +21,7 @@ const NavBar: React.FC = () => {
         <p>{menu ? "x" : "☰"}</p>
       </motion.div>
       <Menu />
-    </div>
+    </nav>
   );
 };
 

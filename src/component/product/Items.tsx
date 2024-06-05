@@ -1,6 +1,6 @@
 import React from "react";
 import styles from "../../css/Items.module.css";
-import jsonItems from "../../../src/eura.items.json";
+import jsonItems from "../../public/asset/data/eura.items.json";
 import { Link } from "react-router-dom";
 import { motion } from "framer-motion";
 
@@ -21,7 +21,7 @@ const Items: React.FC = () => {
 
   return (
     <div className={styles.items}>
-      <div className={styles["items-content"]}>
+      <section className={styles["items-content"]}>
         <motion.h1
           initial={{ opacity: 0, y: 50 }}
           animate={{ opacity: 1, y: 0 }}
@@ -38,15 +38,17 @@ const Items: React.FC = () => {
             >
               <Link
                 to={
-                  el === "Home" ? BASE_URL : BASE_URL + "products/items/" + el
+                  el === "Back"
+                    ? BASE_URL + "products/"
+                    : BASE_URL + "products/items/" + el
                 }
               >
-                <motion.p whileHover={{ color: "#ddd53c" }}>{el}</motion.p>
+                <motion.p whileHover={{ color: "#f1dc9c" }}>{el}</motion.p>
               </Link>
             </motion.div>
           ))}
         </div>
-      </div>
+      </section>
     </div>
   );
 };

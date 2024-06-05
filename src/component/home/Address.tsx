@@ -3,7 +3,7 @@ import styles from "../../css/Address.module.css";
 
 const Address: React.FC = () => {
   return (
-    <motion.div
+    <motion.section
       className={styles.address}
       initial={{ opacity: 0 }}
       animate={{ opacity: 1 }}
@@ -14,7 +14,7 @@ const Address: React.FC = () => {
       <p>Ilir Barat 1, Palembang, Sumatera Selatan</p>
       <p>Telp. 0711 - 440838</p>
       <p>Fax. 0711 - 446314</p>
-    </motion.div>
+    </motion.section>
   );
 };
 

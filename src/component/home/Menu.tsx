@@ -16,7 +16,7 @@ const Menu: React.FC = () => {
   const contactList = [
     { title: "WhatsApp 1", path: "https://wa.me/6281279909679" },
     { title: "WhatsApp 2", path: "https://wa.me/6281294181950" },
-    { title: "E-mail", path: "" },
+    { title: "E-mail (on development)", path: "" },
   ];
 
   return (

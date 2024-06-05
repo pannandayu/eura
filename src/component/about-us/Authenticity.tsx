@@ -16,7 +16,7 @@ const Authenticity: React.FC = () => {
         src={eura_inside}
         alt="eura inside"
       />
-      <motion.div
+      <motion.section
         className={styles["authenticity-headline"]}
         initial={{ x: 70 }}
         animate={{ x: 0 }}
@@ -44,7 +44,7 @@ const Authenticity: React.FC = () => {
           src={eura_inside_2}
           alt="eura inside 2"
         />
-      </motion.div>
+      </motion.section>
     </Wrapper>
   );
 };

@@ -1,0 +1,38 @@
+.item {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  height: 100vh;
+}
+
+.item-content {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.item-detail {
+  display: flex;
+  justify-content: center;
+  gap: 8px;
+}
+
+.item-detail div {
+  display: flex;
+  justify-content: center;
+  gap: 8px;
+}
+
+.item-detail div p {
+  margin-top: 0;
+}
+
+.item-content a {
+  text-decoration: none;
+  color: #eeeba7;
+}
+
+.item-content a:hover {
+  color: #f1dc9c;
+  transition: 0.2s ease-in-out;
+}

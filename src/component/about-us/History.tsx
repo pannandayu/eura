@@ -7,7 +7,7 @@ import Wrapper from "./Wrapper";
 const History: React.FC = () => {
   return (
     <Wrapper>
-      <motion.div
+      <motion.section
         className={styles["history-headline"]}
         initial={{ x: -40 }}
         animate={{ x: 0 }}
@@ -31,7 +31,7 @@ const History: React.FC = () => {
             clients, including large corporations and small businesses.
           </h3>
         </motion.div>
-      </motion.div>
+      </motion.section>
       <motion.img
         className={styles.image}
         initial={{ y: 50 }}

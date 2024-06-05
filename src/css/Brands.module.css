@@ -5,5 +5,12 @@
   height: 100vh;
 }
 
-.brands-content {
+.link a {
+  text-decoration: none;
+  color: #eeeba7;
+}
+
+.link a:hover {
+  color: #f1dc9c;
+  transition: 0.2s ease-in-out;
 }

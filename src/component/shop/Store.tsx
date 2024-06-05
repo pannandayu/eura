@@ -27,30 +27,30 @@ const Store: React.FC = () => {
   const setMenuState = useSetAtom(menuAtom);
 
   return (
-    <div className={styles.shop}>
+    <article className={styles.shop}>
       <RunningText>
         VISIT OUR STORE! VISIT OUR STORE! VISIT OUR STORE! VISIT OUR STORE!
       </RunningText>
-      <div>
+      <section>
         <div className={styles.links}>
-          <motion.h1
+          <motion.a
             initial={{ x: -100 }}
             animate={{ x: 0 }}
             transition={{ duration: 0.3 }}
+            href="https://www.tokopedia.com/euraniaga"
+            target="_blank"
           >
-            <a href="https://www.tokopedia.com/euraniaga" target="_blank">
-              Tokopedia
-            </a>
-          </motion.h1>
-          <motion.h1
+            Tokopedia
+          </motion.a>
+          <motion.a
             initial={{ x: 100 }}
             animate={{ x: 0 }}
             transition={{ duration: 0.3 }}
+            href="https://shopee.co.id/euraniaga"
+            target="_blank"
           >
-            <a href="https://shopee.co.id/euraniaga" target="_blank">
-              Shopee
-            </a>
-          </motion.h1>
+            Shopee
+          </motion.a>
         </div>
         <Link
           style={{ color: "#eeeba7", textDecoration: "none" }}
@@ -59,11 +59,11 @@ const Store: React.FC = () => {
         >
           Home
         </Link>
-      </div>
+      </section>
       <RunningText>
         SHOP WITH US! SHOP WITH US! SHOP WITH US! SHOP WITH US!
       </RunningText>
-    </div>
+    </article>
   );
 };
 

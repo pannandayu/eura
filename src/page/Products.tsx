@@ -1,4 +1,4 @@
-import ProductsLanding from "../component/products/Products";
+import ProductsLanding from "../component/product/Products";
 
 const Products: React.FC = () => {
   return <ProductsLanding />;

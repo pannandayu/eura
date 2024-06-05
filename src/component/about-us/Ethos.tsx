@@ -7,7 +7,7 @@ import eura_front from "../../../src/public/asset/image/eura_front.jpeg";
 const Ethos: React.FC = () => {
   return (
     <Wrapper>
-      <motion.div
+      <motion.section
         className={styles["ethos-headline"]}
         initial={{ x: -70 }}
         animate={{ x: 0 }}
@@ -27,7 +27,7 @@ const Ethos: React.FC = () => {
             <b>quality through action</b> rather than words.
           </h3>
         </motion.div>
-      </motion.div>
+      </motion.section>
       <motion.img
         className={styles.image}
         initial={{ y: 150 }}

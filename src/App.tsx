@@ -8,9 +8,9 @@ import Home from "./page/Home";
 
 import { Provider } from "jotai";
 import Error from "./component/Error";
-import Brands from "./component/products/Brands";
-import Item from "./component/products/Item";
-import Items from "./component/products/Items";
+import Brands from "./component/product/Brands";
+import Item from "./component/product/Item";
+import Items from "./component/product/Items";
 import AboutUs from "./page/AboutUs";
 import Products from "./page/Products";
 import Shop from "./page/Shop";

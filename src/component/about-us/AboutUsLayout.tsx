@@ -1,4 +1,4 @@
-import { motion } from "framer-motion";
+import { motion, MotionStyle } from "framer-motion";
 import { useSetAtom } from "jotai";
 import _ from "lodash";
 import { Fragment, useEffect, useState } from "react";
@@ -11,6 +11,14 @@ import Rating from "./Rating";
 import VisionMission from "./VisionMission";
 
 const { BASE_URL } = import.meta.env;
+
+const layoutStyle = { height: "500vh", background: "#426d55" };
+const euraHomeButtonStyle = {
+  margin: 0,
+  position: "absolute",
+  marginTop: "4%",
+  marginLeft: "4.5%",
+} as MotionStyle;
 
 const AboutUsLayout: React.FC = () => {
   const [pixel, setPixel] = useState(0);
@@ -32,7 +40,7 @@ const AboutUsLayout: React.FC = () => {
   }, []);
 
   useEffect(() => {
-    if (pixel > 500) {
+    if (pixel > 150) {
       setRenderedComp((prev) => {
         return {
           ...prev,
@@ -40,7 +48,7 @@ const AboutUsLayout: React.FC = () => {
         };
       });
     }
-    if (pixel > 1300) {
+    if (pixel > 1000) {
       setRenderedComp((prev) => {
         return {
           ...prev,
@@ -48,7 +56,7 @@ const AboutUsLayout: React.FC = () => {
         };
       });
     }
-    if (pixel > 2000) {
+    if (pixel > 1700) {
       setRenderedComp((prev) => {
         return {
           ...prev,
@@ -56,7 +64,7 @@ const AboutUsLayout: React.FC = () => {
         };
       });
     }
-    if (pixel > 3000) {
+    if (pixel > 2800) {
       setRenderedComp((prev) => {
         return {
           ...prev,
@@ -67,16 +75,11 @@ const AboutUsLayout: React.FC = () => {
   }, [pixel]);
 
   return (
-    <div style={{ height: "500vh", background: "#426d55" }}>
+    <div style={layoutStyle}>
       <motion.p
         initial={{ x: -20 }}
         animate={{ x: 0 }}
-        style={{
-          margin: 0,
-          position: "absolute",
-          marginTop: "4%",
-          marginLeft: "4.5%",
-        }}
+        style={euraHomeButtonStyle}
       >
         <Link
           style={{ color: "#eeeba7", textDecoration: "none" }}
@@ -86,21 +89,23 @@ const AboutUsLayout: React.FC = () => {
           Eura
         </Link>
       </motion.p>
-      <History />
-      {renderedComp.authenticity && <Authenticity />}
-      {renderedComp.ethos && (
-        <Fragment>
-          <Ethos />
-          <hr style={{ width: "50%" }} />
-        </Fragment>
-      )}
-      {renderedComp.visionMission && (
-        <Fragment>
-          <VisionMission />
-          <hr style={{ width: "50%" }} />
-        </Fragment>
-      )}
-      {renderedComp.visionMission && <Rating />}
+      <article>
+        <History />
+        {renderedComp.authenticity && <Authenticity />}
+        {renderedComp.ethos && (
+          <Fragment>
+            <Ethos />
+            <hr style={{ width: "50%" }} />
+          </Fragment>
+        )}
+        {renderedComp.visionMission && (
+          <Fragment>
+            <VisionMission />
+            <hr style={{ width: "50%" }} />
+          </Fragment>
+        )}
+        {renderedComp.rating && <Rating />}
+      </article>
     </div>
   );
 };

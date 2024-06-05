@@ -6,8 +6,8 @@ import NavBar from "./NavBar";
 const Layout = () => {
   return (
     <Fragment>
+      <NavBar />
       <main className={styles.container}>
-        <NavBar />
         <Outlet />
       </main>
       <footer className={styles.footer}>

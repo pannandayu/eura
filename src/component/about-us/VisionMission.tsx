@@ -30,7 +30,7 @@ const VisionMission: React.FC = () => {
   return (
     <div className={styles["vision-mission"]}>
       <AnimatePresence mode="popLayout">
-        <motion.div
+        <motion.section
           key={visMis ? "vision" : "mission"}
           className={styles["vision-mission-content"]}
           initial={{ x: -40, opacity: 0 }}
@@ -39,7 +39,7 @@ const VisionMission: React.FC = () => {
           transition={{ duration: 0.25 }}
         >
           {visMis ? vision : mission}
-        </motion.div>
+        </motion.section>
       </AnimatePresence>
       <motion.div
         className={styles["button-container"]}

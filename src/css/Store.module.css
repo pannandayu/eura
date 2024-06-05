@@ -11,16 +11,18 @@
   display: flex;
   justify-content: space-evenly;
   gap: 20px;
+  margin-bottom: 10px;
 }
 
 .links a {
   text-decoration: none;
   color: #eeeba7;
+  font-size: 32px;
 }
 
 .links a:hover {
   cursor: pointer;
-  color: #e6de56;
+  color: #f1dc9c;
   transition: 0.2s;
 }
 

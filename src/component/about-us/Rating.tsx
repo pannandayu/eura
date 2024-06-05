@@ -5,13 +5,18 @@ import styles from "../../css/Rating.module.css";
 
 const { BASE_URL } = import.meta.env;
 
+const border = {
+  border: "1px solid #eeeba7",
+  borderRadius: "10px",
+  padding: "5%",
+};
+
 const Rating: React.FC = () => {
-  const border = { border: "1px solid #eeeba7", borderRadius: "10px" };
   const setMenuState = useSetAtom(menuAtom);
 
   return (
     <div className={styles.rating}>
-      <div>
+      <section>
         <h1>
           <a
             href="https://e-katalog.lkpp.go.id/info/penyedia/552304"
@@ -34,7 +39,7 @@ const Rating: React.FC = () => {
             <p>3.9 / 4.0</p>
           </div>
         </div>
-      </div>
+      </section>
       <br />
       <Link
         style={{ color: "#eeeba7", textDecoration: "none" }}

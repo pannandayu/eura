@@ -98,14 +98,14 @@
     "link": "https://e-katalog.lkpp.go.id/katalog/produk/detail/64394067?type=general"
   },
   {
-    "name": "Glass Ionomer",
+    "name": "Ionomer Glass",
     "brand": "GC",
     "type": "A3",
     "unit": "Box",
     "link": "https://e-katalog.lkpp.go.id/katalog/produk/detail/79332360?type=general"
   },
   {
-    "name": "Glass Ionomer",
+    "name": "Ionomer Glass",
     "brand": "GC",
     "type": "A2",
     "unit": "Box",
@@ -547,6 +547,6 @@
     "link": "https://e-katalog.lkpp.go.id/katalog/produk/detail/65273589?type=general"
   },
   {
-    "name": "Home"
+    "name": "Back"
   }
 ]

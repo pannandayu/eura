@@ -7,3 +7,13 @@
   max-width: 25%;
   text-align: justify;
 }
+
+.info-box a {
+  text-decoration: none;
+  color: #eeeba7;
+}
+
+.info-box a:hover {
+  color: #f1dc9c;
+  transition: 0.2s ease-in-out;
+}
