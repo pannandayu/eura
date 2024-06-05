@@ -22,11 +22,11 @@ const Authenticity: React.FC = () => {
           animate={{ x: 0 }}
           transition={{ duration: 0.75 }}
         >
-          <h3>
+          <p>
             Our reputation for excellence is built on a foundation of
             authenticity. We offer <b>genuine products</b> with a modest markup
             to ensure the sustainability of our operations.
-          </h3>
+          </p>
         </motion.div>
       </motion.section>
       <motion.img

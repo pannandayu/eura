@@ -20,16 +20,16 @@ const History: React.FC = () => {
           animate={{ x: 0 }}
           transition={{ duration: 0.25 }}
         >
-          <h3 style={{ marginBottom: 0 }}>
+          <p style={{ marginBottom: 0 }}>
             Eura, established over a decade ago on March 1st, 2012, has
             consistently maintained its position as a robust and reliable
             medical supply distributor.
-          </h3>
-          <h3>
+          </p>
+          <p>
             We have successfully fulfilled requests from a{" "}
             <b>wide range of clients</b>, including large corporations and small
             businesses.
-          </h3>
+          </p>
         </motion.div>
       </motion.section>
       <motion.img

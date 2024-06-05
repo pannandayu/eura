@@ -20,11 +20,11 @@ const Ethos: React.FC = () => {
           animate={{ x: 0 }}
           transition={{ duration: 0.75 }}
         >
-          <h3>
+          <p>
             This company profile website is designed to be concise. Like our
             business ethos, we believe in delivering{" "}
             <b>quality through action</b> rather than words.
-          </h3>
+          </p>
         </motion.div>
       </motion.section>
       <motion.img
