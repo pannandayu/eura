@@ -21,11 +21,11 @@
   }
 
   .weird-line {
-    margin-top: 115%;
+    margin-top: 15%;
   }
 
   .about-us-layout {
-    height: 440vh;
+    height: 390vh;
   }
 }
 
@@ -36,11 +36,26 @@
   }
 
   .weird-line {
-    margin-top: 115%;
+    margin-top: 15%;
   }
 
   .about-us-layout {
-    height: 450vh;
+    height: 400vh;
+  }
+}
+
+@media (max-width: 390px) {
+  .about-us-headtag {
+    margin-top: 7%;
+    margin-left: 7%;
+  }
+
+  .weird-line {
+    margin-top: 15%;
+  }
+
+  .about-us-layout {
+    height: 410vh;
   }
 }
 
@@ -51,11 +66,11 @@
   }
 
   .weird-line {
-    margin-top: 115%;
+    margin-top: 15%;
   }
 
   .about-us-layout {
-    height: 520vh;
+    height: 470vh;
   }
 }
 
@@ -66,7 +81,7 @@
   }
 
   .weird-line {
-    margin-top: 115%;
+    margin-top: 15%;
   }
 
   .about-us-layout {

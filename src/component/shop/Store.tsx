@@ -29,6 +29,7 @@ const Store: React.FC = () => {
 
   return (
     <article className={styles.shop}>
+      <br />
       <RunningText>
         VISIT OUR STORE! VISIT OUR STORE! VISIT OUR STORE! VISIT OUR STORE!
       </RunningText>
@@ -64,6 +65,7 @@ const Store: React.FC = () => {
       <RunningText>
         SHOP WITH US! SHOP WITH US! SHOP WITH US! SHOP WITH US!
       </RunningText>
+      <br />
     </article>
   );
 };

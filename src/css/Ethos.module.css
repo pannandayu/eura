@@ -22,14 +22,15 @@
 }
 
 .image {
-  margin-right: 13%;
+  margin-right: 10%;
   width: 500px;
   height: 600px;
 }
 
 @media (max-width: 430px) {
   .ethos {
-    margin-top: 95%;
+    margin-top: 8%;
+    flex-direction: column;
   }
 
   .ethos-headline-our {
@@ -47,15 +48,14 @@
   .image {
     height: 350px;
     width: 80%;
-    position: absolute;
-    margin-top: 70%;
-    left: 10%;
+    margin-left: 5%;
   }
 }
 
 @media (max-width: 414px) {
   .ethos {
-    margin-top: 110%;
+    margin-top: 8%;
+    flex-direction: column;
   }
 
   .ethos-headline-our {
@@ -73,15 +73,14 @@
   .image {
     height: 350px;
     width: 80%;
-    position: absolute;
-    margin-top: 70%;
-    left: 10%;
+    margin-left: 5%;
   }
 }
 
-@media (max-width: 375px) {
+@media (max-width: 390px) {
   .ethos {
-    margin-top: 103%;
+    margin-top: 8%;
+    flex-direction: column;
   }
 
   .ethos-headline-our {
@@ -99,15 +98,39 @@
   .image {
     height: 350px;
     width: 300px;
-    position: absolute;
-    margin-top: 70%;
-    left: 10%;
+    margin-left: 5%;
+  }
+}
+
+@media (max-width: 375px) {
+  .ethos {
+    margin-top: 8%;
+    flex-direction: column;
+  }
+
+  .ethos-headline-our {
+    font-size: 20px;
+  }
+
+  .ethos-headline-category {
+    font-size: 80px;
+  }
+
+  .ethos-content {
+    max-width: 90%;
+  }
+
+  .image {
+    height: 350px;
+    width: 300px;
+    margin-left: 5%;
   }
 }
 
 @media (max-width: 360px) {
   .ethos {
-    margin-top: 103%;
+    margin-top: 8%;
+    flex-direction: column;
   }
 
   .ethos-headline-our {
@@ -125,8 +148,6 @@
   .image {
     height: 350px;
     width: 80%;
-    position: absolute;
-    margin-top: 75%;
-    left: 10%;
+    margin-left: 5%;
   }
 }

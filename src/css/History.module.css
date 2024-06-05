@@ -28,6 +28,10 @@
 }
 
 @media (max-width: 430px) {
+  .history {
+    flex-direction: column;
+  }
+
   .history-headline {
     margin-top: 30%;
   }
@@ -47,13 +51,16 @@
   .image {
     height: 100px;
     width: 300px;
-    position: absolute;
-    top: 43%;
-    left: 5%;
+    margin-left: 5%;
+    margin-top: 0;
   }
 }
 
 @media (max-width: 414px) {
+  .history {
+    flex-direction: column;
+  }
+
   .history-headline {
     margin-top: 30%;
   }
@@ -73,13 +80,16 @@
   .image {
     height: 100px;
     width: 300px;
-    position: absolute;
-    top: 45%;
-    left: 5%;
+    margin-left: 5%;
+    margin-top: 0;
   }
 }
 
 @media (max-width: 390px) {
+  .history {
+    flex-direction: column;
+  }
+
   .history-headline {
     margin-top: 30%;
   }
@@ -99,13 +109,16 @@
   .image {
     height: 100px;
     width: 300px;
-    position: absolute;
-    top: 52%;
-    left: 5%;
+    margin-left: 5%;
+    margin-top: 0;
   }
 }
 
 @media (max-width: 375px) {
+  .history {
+    flex-direction: column;
+  }
+
   .history-headline {
     margin-top: 30%;
   }
@@ -125,13 +138,16 @@
   .image {
     height: 100px;
     width: 300px;
-    position: absolute;
-    top: 65%;
-    left: 5%;
+    margin-left: 5%;
+    margin-top: 0;
   }
 }
 
 @media (max-width: 360px) {
+  .history {
+    flex-direction: column;
+  }
+  
   .history-headline {
     margin-top: 30%;
   }
@@ -151,8 +167,7 @@
   .image {
     height: 100px;
     width: 300px;
-    position: absolute;
-    top: 60%;
-    left: 5%;
+    margin-left: 5%;
+    margin-top: 0;
   }
 }

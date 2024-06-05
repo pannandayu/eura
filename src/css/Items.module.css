@@ -46,7 +46,8 @@
     padding: 10px;
   }
   .items {
-    height: 370vh;
+    height: auto;
+    margin-bottom: 15%;
   }
 }
 
@@ -64,7 +65,8 @@
     padding: 10px;
   }
   .items {
-    height: 400vh;
+    height: auto;
+    margin-bottom: 15%;
   }
 }
 
@@ -82,7 +84,8 @@
     padding: 10px;
   }
   .items {
-    height: 430vh;
+    height: auto;
+    margin-bottom: 15%;
   }
 }
 
@@ -99,7 +102,9 @@
   .items-grid a {
     padding: 10px;
   }
+
   .items {
-    height: 550vh;
+    height: auto;
+    margin-bottom: 15%;
   }
 }

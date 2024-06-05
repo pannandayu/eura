@@ -1,7 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Sen:wght@400..800&family=Space+Grotesk:wght@300&display=swap");
 
 body {
-  font-family: "Space Grotesk", "Times New Roman", Helvetica, sans-serif;
+  font-family: "Space Grotesk", "Sen", Helvetica, sans-serif;
   margin: 0;
   padding: 0;
   background: #426d55;

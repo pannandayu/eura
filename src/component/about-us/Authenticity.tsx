@@ -2,19 +2,10 @@ import { motion } from "framer-motion";
 import styles from "../../css/Authenticity.module.css";
 
 import eura_inside from "../../../src/public/asset/image/eura_inside.jpeg";
-import eura_inside_2 from "../../../src/public/asset/image/eura_inside2.jpeg";
 
 const Authenticity: React.FC = () => {
   return (
     <div className={styles.authenticity}>
-      <motion.img
-        className={styles.image}
-        initial={{ y: 150 }}
-        animate={{ y: 0 }}
-        transition={{ duration: 0.65 }}
-        src={eura_inside}
-        alt="eura inside"
-      />
       <motion.section
         className={styles["authenticity-headline"]}
         initial={{ x: -70 }}
@@ -39,12 +30,12 @@ const Authenticity: React.FC = () => {
         </motion.div>
       </motion.section>
       <motion.img
-        className={styles.image2}
+        className={styles.image}
         initial={{ y: 150 }}
         animate={{ y: 0 }}
-        transition={{ duration: 1 }}
-        src={eura_inside_2}
-        alt="eura inside 2"
+        transition={{ duration: 0.65 }}
+        src={eura_inside}
+        alt="eura inside"
       />
     </div>
   );
