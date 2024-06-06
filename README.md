@@ -1,5 +1,5 @@
 # Eura Project
-[Website](https://www.example.com)
+[Website](https://euraniaga.github.io)
 
 ## Table of Contents
 * [General Info](#general-information)
