@@ -2,6 +2,7 @@ import { useSetAtom } from "jotai";
 import { Link } from "react-router-dom";
 import { menuAtom } from "../../context/atom";
 import styles from "../../css/Rating.module.css";
+import { motion } from "framer-motion";
 
 const { BASE_URL } = import.meta.env;
 
@@ -15,7 +16,11 @@ const Rating: React.FC = () => {
   const setMenuState = useSetAtom(menuAtom);
 
   return (
-    <div className={styles.rating}>
+    <motion.div
+      className={styles.rating}
+      initial={{ opacity: 0 }}
+      animate={{ opacity: 1 }}
+    >
       <section>
         <h1>
           <a
@@ -48,7 +53,7 @@ const Rating: React.FC = () => {
       >
         Home
       </Link>
-    </div>
+    </motion.div>
   );
 };
 
